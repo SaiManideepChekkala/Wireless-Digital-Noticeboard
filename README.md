@@ -21,7 +21,7 @@ This project brings together multiple hardware modules to build a smart and inte
 
 This system is easy to use, secure, and ideal for campuses, offices, and public spaces where digital communication is essential. 🚀
 
-
+---
 ## 🔧 Hardware Components
 - **LPC2148** (ARM7 Microcontroller)
 - **4 × 8×8 Dot Matrix LED Displays**
