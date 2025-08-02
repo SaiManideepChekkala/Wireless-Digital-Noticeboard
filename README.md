@@ -32,7 +32,7 @@ Major_Project/
 ---
 
 ## 💡 Features
-- Send text messages via Bluetooth using a passkey (e.g., `$$786Message$$`)
+- Send text messages via Bluetooth using a passkey (e.g., `@153Message$`)
 - Scroll long messages across all 4 LED matrices
 - Store and retrieve messages using EEPROM (AT24C256)
 - Continuously display stored messages until a new one is received
