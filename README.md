@@ -1,2 +1,77 @@
-# Wireless-Digital-Notice-board
-This project replaces traditional notice boards with a wireless, digital version using an LPC2148 microcontroller and 4 dot matrix LED displays.
+# Wireless Digital Notice Board
+
+Welcome to the Wireless Digital Notice Board System! 🖥️📲
+This project is a microcontroller-based solution using the LPC2148 to wirelessly display scrolling messages on a 4-panel LED dot matrix. Messages can be updated in real-time via Bluetooth 🔗 from a smartphone 📱 and are stored in EEPROM 💾 to persist even after power resets. Perfect for smart campuses 🎓, office buildings 🏢, or public displays 🚌!
+
+It’s secure 🔐, simple 💡, and fully embedded — a great step into IoT-style communication systems! 🚀
+
+---
+
+## 🔧 Hardware Components
+- **LPC2148** (ARM7 Microcontroller)
+- **4 × 8×8 Dot Matrix LED Displays**
+- **HC-05 Bluetooth Module**
+- **AT24C256 EEPROM** (I2C-based)
+- **74HC573** (Octal Latch)
+- **74HC164** (Shift Register)
+
+---
+
+## 📂 Project Structure
+```
+Major_Project/
+├── delay.c / delay.h          # Custom delay functions
+├── dml.c / dml.h              # Dot matrix LED control
+├── i2c.c / i2c.h              # I2C protocol implementation
+├── i2c_eeprom.c / .h          # EEPROM read/write functions
+├── uart.c / uart.h            # UART communication
+├── defines.h                  # Global definitions
+├── projectmain.c              # Main source file
+```
+
+---
+
+## 💡 Features
+- Send text messages via Bluetooth using a passkey (e.g., `$$786Message$$`)
+- Scroll long messages across all 4 LED matrices
+- Store and retrieve messages using EEPROM (AT24C256)
+- Continuously display stored messages until a new one is received
+- Default message shown if EEPROM is empty
+
+---
+
+## 🛠 Tools Used
+- **Keil uVision** (Embedded C development)
+- **Flash Magic** (Programming LPC2148)
+- **Embedded C Language**
+
+---
+
+## 🚀 How to Use
+1. Flash the firmware using Flash Magic onto LPC2148.
+2. Power on the board and connect your smartphone to **HC-05**.
+3. Use a terminal app to send a message like:
+   ```
+   $$786Hello World$$
+   ```
+4. The system will:
+   - Validate the passkey
+   - Store the message in EEPROM
+   - Scroll it on the LED display
+
+---
+
+## ✅ Status
+- Bluetooth communication ✔️  
+- EEPROM read/write ✔️  
+- 4-panel dot matrix scrolling ✔️  
+- UART + I2C integration ✔️  
+- Passkey-based security ✔️  
+
+---
+
+## 📸 Optional Additions
+- Add circuit diagrams, simulation images, or project demo screenshots in an `/images` folder.
+- Include a video demo in the GitHub repo or link to YouTube.
+
+---
