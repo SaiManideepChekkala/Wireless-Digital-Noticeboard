@@ -70,8 +70,3 @@ Major_Project/
 
 ---
 
-## 📸 Optional Additions
-- Add circuit diagrams, simulation images, or project demo screenshots in an `/images` folder.
-- Include a video demo in the GitHub repo or link to YouTube.
-
----
