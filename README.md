@@ -8,11 +8,17 @@ This project uses the LPC2148 microcontroller to display scrolling messages on a
 
 This project brings together multiple hardware modules to build a smart and interactive wireless display system. Here’s what it does:
 🖥️ **Displays Messages**: Shows scrolling text on a 4-panel 8×8 dot matrix LED display.
+
 📱 **Bluetooth Connectivity**: Accepts messages wirelessly from a smartphone using the HC-05 Bluetooth module.
+
 💾 **EEPROM Storage**: Saves messages in AT24C256 EEPROM so they remain even after the device is powered off.
+
 🔐 **Secure Message Update**: Only updates messages that come with a valid passkey (`$$786Your Message$$`).
+
 🔁 **Auto-Scroll Display**: Continuously scrolls stored messages until a new one is received.
+
 🧠 **Built on LPC2148**: Uses the ARM7-based LPC2148 microcontroller for fast and reliable control.
+
 This system is easy to use, secure, and ideal for campuses, offices, and public spaces where digital communication is essential. 🚀
 
 
