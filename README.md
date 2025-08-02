@@ -13,7 +13,7 @@ This project brings together multiple hardware modules to build a smart and inte
 
 💾 **EEPROM Storage**: Saves messages in AT24C256 EEPROM so they remain even after the device is powered off.
 
-🔐 **Secure Message Update**: Only updates messages that come with a valid passkey (`$$786Your Message$$`).
+🔐 **Secure Message Update**: Only updates messages that come with a valid passkey (`@153Your Message$`).
 
 🔁 **Auto-Scroll Display**: Continuously scrolls stored messages until a new one is received.
 
