@@ -14,7 +14,7 @@ This project brings together multiple hardware modules to build a smart and inte
 🔁 **Auto-Scroll Display**: Continuously scrolls stored messages until a new one is received.
 🧠 **Built on LPC2148**: Uses the ARM7-based LPC2148 microcontroller for fast and reliable control.
 This system is easy to use, secure, and ideal for campuses, offices, and public spaces where digital communication is essential. 🚀
----
+
 
 ## 🔧 Hardware Components
 - **LPC2148** (ARM7 Microcontroller)
