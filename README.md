@@ -52,7 +52,7 @@ Major_Project/
 2. Power on the board and connect your smartphone to **HC-05**.
 3. Use a terminal app to send a message like:
    ```
-   $$786Hello World$$
+   $@153Hello World$$
    ```
 4. The system will:
    - Validate the passkey
