@@ -1,17 +1,17 @@
 # Wireless Digital Notice Board
 
 Welcome to the Wireless Digital Notice Board System! 🖥️📲
-This project uses the LPC2148 microcontroller to display scrolling messages on a 4-panel LED matrix. Messages are sent from a smartphone via Bluetooth 📱🔗 and saved in EEPROM 💾, so they stay even after power is turned off. It’s a simple, secure 🔐, and useful system for schools 🎓, offices 🏢, or public places 🚌 — a smart way to share messages wirelessly! 🚀
+This project uses the LPC2148 microcontroller to display scrolling messages on a 4-panel LED matrix. Messages are sent from a smartphone via Bluetooth 📱🔗 and saved in EEPROM 💾, so they stay even after power is turned off. It’s a simple, secure 🔐, and useful system for schools 🎓, offices 🏢, or public places 🚌, a smart way to share messages wirelessly! 🚀
 
 ---
 ## 📋 Project Overview
 
-This project brings together multiple hardware modules to build a smart and interactive wireless display system. Here’s what it does:
+This project combines multiple hardware modules to create a smart and interactive wireless display system. Here’s what it does:
 🖥️ **Displays Messages**: Shows scrolling text on a 4-panel 8×8 dot matrix LED display.
 
 📱 **Bluetooth Connectivity**: Accepts messages wirelessly from a smartphone using the HC-05 Bluetooth module.
 
-💾 **EEPROM Storage**: Saves messages in AT24C256 EEPROM so they remain even after the device is powered off.
+💾 **EEPROM Storage**: Saves messages in the AT24C256 EEPROM, ensuring they remain even after the device is powered off.
 
 🔐 **Secure Message Update**: Only updates messages that come with a valid passkey (`@153Your Message$`).
 
