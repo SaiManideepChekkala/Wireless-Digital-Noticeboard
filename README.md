@@ -102,10 +102,9 @@ Submit a pull request and be a part of making this project even better! 😊
 
 ## 🙏 Acknowledgments
 
-- The **LPC2148 developer community** for excellent documentation and tools.  
-- The creators of **Keil** and **Flash Magic** for making embedded development easier.  
-- Special thanks to **our mentors and team members** who guided and contributed to the development of this project.  
-- And **you**, for exploring, using, or contributing to this project! 🎉
+- 🎓 Developed by: *Sai Manideep Chekkala*
+- 🏫 Major Project
+- 🎯 Tech: LPC2148, Embedded C, 8*8 LED Matrix, HC-05(Bluetooth), AT24C256(EEPROM).
 
 ---
 
