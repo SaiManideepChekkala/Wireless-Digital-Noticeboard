@@ -84,6 +84,18 @@ Major_Project/
 - Passkey-based security ✔️  
 
 ---
+💡 **Hardware Highlights**
+
+- **ARM7 Development Board Integration 🔗:** Centralized processing with LPC2148 microcontroller.
+- **I2C Communication Protocol 🔄:** Efficient interfacing with peripheral devices using I2C for reliable data exchange.
+- **UART Interrupt-driven Messaging 🚦:** Real-time wireless data transmission with UART interrupts for responsive communication.
+- **Dynamic LED Matrix Display 🟩:** Multi-panel dot matrix modules for clear, vibrant message visualization.
+- **Interactive LCD Interface 🖥️:** Character LCD for status updates and user feedback.
+- **User-friendly Controls ⌨️:** Push buttons and 4x4 keypad for intuitive user interaction.
+- **Sensor Connectivity 🌡️:** On-board ADC for analog sensor integration.
+- **Modular Wiring 🧩:** Organized and scalable hardware connections for easy maintenance and upgrades.
+
+---
 ## 🔧 Improvements & Future Enhancements
 
 - **LCD Integration 📟**: While this project uses 8×8 dot matrix displays, it can be extended to work with an LCD (like 16x2 or graphical LCDs) for clearer, more flexible message display.   
