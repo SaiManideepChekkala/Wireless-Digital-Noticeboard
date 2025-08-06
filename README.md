@@ -71,8 +71,8 @@ Major_Project/
    - Open the source code in Keil uVision.
    - Ensure all required files are present:
      - `projectmain.c` (main logic)
-     - `delay.c`, `dml.c`, `i2c.c`, `i2c_eeprom.c`, `uart_init.c`, and their respective headers
-     - `defines.h` (global definitions)
+     - `delay.c`, `dml.c`, `i2c.c`, `i2c_eeprom.c`, `uart_init.c`, `sipo.c` and their respective headers
+     - `defines.h`,`types.h` (global definitions)
    - Compile the project to generate the HEX file for LPC2148.
 
 2. **Flash the Microcontroller**
