@@ -19,6 +19,7 @@ This project combines multiple hardware modules to create a smart and interactiv
 
 🧠 **Built on LPC2148**: Uses the ARM7-based LPC2148 microcontroller for fast and reliable control.
 
+🔀 **SIPO Shift Register**: `sipo.c` handles the serial-to-parallel data transfer for LED matrix c
 This system is easy to use, secure, and ideal for campuses, offices, and public spaces where digital communication is essential. 🚀
 
 ---
@@ -29,6 +30,7 @@ This system is easy to use, secure, and ideal for campuses, offices, and public 
 - **AT24C256 EEPROM** (I2C-based)
 - **74HC573** (Octal Latch)
 - **74HC164** (Shift Register)
+  
 
 ---
 
@@ -40,6 +42,7 @@ Major_Project/
 ├── i2c.c / i2c.h              # I2C protocol implementation
 ├── i2c_eeprom.c / .h          # EEPROM read/write functions
 ├── uart.c / uart.h            # UART communication
+├── sipo.c/sipo.h              # Serial-In Parallel-Out (SIPO) control for LED matrix
 ├── defines.h                  # Global definitions
 ├── projectmain.c              # Main source file
 ```
@@ -52,6 +55,7 @@ Major_Project/
 - Store and retrieve messages using EEPROM (AT24C256)
 - Continuously display stored messages until a new one is received
 - Default message shown if EEPROM is empty
+- Efficient LED control using SIPO logic
 
 ---
 
@@ -100,14 +104,15 @@ Major_Project/
 6. **Troubleshooting**
    - If the display doesn’t update, verify hardware connections and power.
    - Ensure your message contains the correct passkey and format.
-   - Check EEPROM and Bluetooth connections.
+   - Check EEPROM, Bluetooth, and SIPO connections.
 ---
 
 ## ✅ Status
 - Bluetooth communication ✔️  
 - EEPROM read/write ✔️  
 - 4-panel dot matrix scrolling ✔️  
-- UART + I2C integration ✔️  
+- UART + I2C integration ✔️
+- SIPO-based LED driving ✔️
 - Passkey-based security ✔️  
 
 ---
@@ -121,6 +126,7 @@ Major_Project/
 - **User-friendly Controls ⌨️:** Push buttons and 4x4 keypad for intuitive user interaction.
 - **Sensor Connectivity 🌡️:** On-board ADC for analog sensor integration.
 - **Modular Wiring 🧩:** Organized and scalable hardware connections for easy maintenance and upgrades.
+- **SIPO-based Output Control 🧠:** `sipo.c` logic enables precise control of LEDs using fewer microcontroller pins.
 
 ---
 ## 🔧 Improvements & Future Enhancements
@@ -129,7 +135,8 @@ Major_Project/
 - **Mobile App Interface 📱**: Create a simple Android app to send and manage messages easily over Bluetooth.  
 - **Multi-Language Support 🌐**: Enhance character encoding to support local languages or symbols.  
 - **Power Efficiency 💡**: Use LPC2148’s low-power modes to reduce energy consumption in idle states.  
-- **Message Management 🗂️**: Implement EEPROM history to view or restore previously displayed messages.  
+- **Message Management 🗂️**: Implement EEPROM history to view or restore previously displayed messages.
+- **Dynamic Matrix Expansion ➕**: SIPO logic (`sipo.c`) can be scaled for additional LED panels.
 ---
 ## 🤝 Contributing
 
