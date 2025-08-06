@@ -106,9 +106,10 @@ Major_Project/
 ---
 ## 🤝 Contributing
 
-Contributions are welcome! 🙌  
-Feel free to fork this repository, improve features, fix bugs, or suggest enhancements.  
-Submit a pull request and be a part of making this project even better! 😊
+- Developed as part of *Embedded Systems Training*
+- Based on ARM7 *LPC2148* architecture
+- Guided by trainers from *Vector India*
+
 
 ---
 
