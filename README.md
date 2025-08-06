@@ -63,17 +63,44 @@ Major_Project/
 ---
 
 ## 🚀 How to Use
-1. Flash the firmware using Flash Magic onto LPC2148.
-2. Power on the board and connect your smartphone to **HC-05**.
-3. Use a terminal app to send a message like:
-   ```
-   @153Hello World$
-   ```
-4. The system will:
-   - Validate the passkey
-   - Store the message in EEPROM
-   - Scroll it on the LED display
+1. **Build the Firmware**
+   - Open the source code in Keil uVision.
+   - Ensure all required files are present:
+     - `projectmain.c` (main logic)
+     - `delay.c`, `dml.c`, `i2c.c`, `i2c_eeprom.c`, `uart_init.c`, and their respective headers
+     - `defines.h` (global definitions)
+   - Compile the project to generate the HEX file for LPC2148.
 
+2. **Flash the Microcontroller**
+   - Use Flash Magic to program the compiled HEX file onto the LPC2148 microcontroller.
+   - Confirm successful flashing before proceeding.
+
+3. **Set Up the Hardware**
+   - Connect the LPC2148 board to:
+     - 4 × 8×8 Dot Matrix LED displays (via latch and shift register)
+     - HC-05 Bluetooth module (for wireless communication)
+     - AT24C256 EEPROM (for message storage)
+   - Power on the board and ensure all modules are functioning.
+
+4. **Bluetooth Pairing & Messaging**
+   - On your smartphone, enable Bluetooth and pair with the HC-05 module.
+   - Install a serial/Bluetooth terminal app (e.g., Serial Bluetooth Terminal).
+   - Send messages in the format:  
+     ```
+     @153Your Message$
+     ```
+     - Replace `Your Message` with your desired text.
+     - Only messages with the correct passkey (`@153...$`) will be accepted and stored.
+
+5. **View & Update Display**
+   - The current message will scroll across all 4 LED panels.
+   - The last valid message is stored in EEPROM and will persist after power cycles.
+   - To update the display, simply send a new message with the same passkey format.
+
+6. **Troubleshooting**
+   - If the display doesn’t update, verify hardware connections and power.
+   - Ensure your message contains the correct passkey and format.
+   - Check EEPROM and Bluetooth connections.
 ---
 
 ## ✅ Status
